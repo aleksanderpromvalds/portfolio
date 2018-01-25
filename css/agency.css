@@ -163,20 +163,20 @@ img::-moz-selection {
     padding: 12px 0;
   }
 }
-#hbg {
-    color: #999999;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -100;
-}
-.kaka {
-    z-index : 99999;
-    position:absolute;
-}
 header.masthead {
   text-align: center;
   color: white;
+}
+/*minu skeem*/
+.hfg{
+  position: absolute;
+  z-index: 2;
+}
+.hbg{
+  z-index: 1;
+  position:fixed;
+  width: 1200px;
+  height: 800px;
 }
 
 header.masthead .intro-text {

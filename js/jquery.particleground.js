@@ -62,10 +62,10 @@
       canvas = document.createElement('canvas');
       canvas.className = 'pg-canvas';
       canvas.style.display = 'block';
+      canvas.zIndex = '-1';
       element.insertBefore(canvas, element.firstChild);
       ctx = canvas.getContext('2d');
       styleCanvas();
-
       // Create particles
       var numParticles = Math.round((canvas.width * canvas.height) / options.density);
       for (var i = 0; i < numParticles; i++) {
@@ -453,5 +453,5 @@
 }());
 particleground(document.getElementById('hbg'), {
     dotColor: '#bda77d',
-    lineColor: '# bda77d'
+    lineColor: '#bda77d'
 });
